@@ -1,0 +1,495 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+.changednavbg{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    
+}
+.mynavbg{
+    background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+}
+.navbar .mynavlogo{
+    font-family: Lovers Quarrel;
+    letter-spacing:1.2px;
+    font-size:30px;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-bottom: 0px;
+    padding-top:0px;
+    /* -webkit-text-stroke: 1px black; */
+}
+.navbar-brand span{
+    font-family: Lovers Quarrel;
+    font-size:20px;
+}
+
+.navbar{
+    z-index:3;
+    margin-bottom:50px;
+}
+.navbar .navbar-nav .mynav-font{
+    color:#000000;
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top:0px;
+    margin-bottom:0px;
+    font-family: "Poppins";
+    font-weight: bold;
+    transition: .3s all ease;
+    }
+.navbar .navbar-nav .mynav-font a.active{ 
+    font-weight:900;
+    color:white;
+}
+.navbar .navbar-nav .nav-item a.active::before{
+    content:"";
+    height: 3px;
+    background:white;
+    position: absolute;
+    display: block;
+    bottom:0px;
+    width:67%;
+    left: 17%; 
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+    color:white;
+    font-weight:900;
+    transition: .3s;
+}
+
+.navbar .navbar-nav .nav-item a:before{
+    content:"";
+    height: 3px;
+    background:white;
+    position: absolute;
+    left:50%;
+    display: block;
+    bottom:0px;
+    width: 0;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.navbar .navbar-nav .nav-item a:hover:before{
+    width:67%;
+    left: 17%; 
+}
+.nav-icon{
+    font-size:25px;
+    color:white
+}
+.cart-btn{
+    position: relative;
+    cursor: pointer;
+}
+.cart-items{
+    position: absolute;
+    top:-2px;
+    left:23px;
+     background:black;
+    padding:0px 7px;
+    border-radius:50%;
+    color:white;
+}
+.my-img{
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:550px;
+    margin-top: 50px;
+}
+.carousel-inner .c-one{
+    background-image: url("../Images/img14 (6)3.jpg");
+}
+.carousel-inner .c-two{
+    position: relative;
+}
+.carousel-inner .c-three{
+    position: relative;
+}
+.c-one h1{
+    font-family: "Monoton";
+    position: absolute;
+    top:40%;
+    left:38%;
+    font-size:90px;
+    color:white;
+}
+.carousel-inner .c-two:before{
+    content:'';
+    display: block;
+    position: absolute;
+    background-image: url("../Images/img15 (5)1.jpg");
+    opacity: 0.75;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.c-two h1{
+    position: absolute;
+    top:60%;
+    left:1%;
+    font-size:80px;
+    z-index:2;    
+    font-family:"Arizonia" ;
+    color:rgb(77, 3, 77);
+    background-color: rgba(255, 255, 255, 0.6);
+    padding:10px;
+}
+.carousel-inner .c-three:before{
+    content:'';
+    display: block;
+    position: absolute;
+    background-image: url("../Images/img2(1).jpg");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.c-three h1{
+    font-family:"Bungee Inline" ;
+    position: absolute;
+    top:60%;
+    left:8%;
+    font-size:70px;
+    z-index:2;
+    color: black;
+}
+.about-us{
+    background-color:rgb(37, 37, 37);
+    color:white;
+    text-align: justify;
+}
+.about-us .row .a-head{
+    font-family:Allura;
+    font-size:60px;
+}
+.about-us .row .body{
+    font-size:18px;
+    color:rgb(212, 208, 208);
+}
+
+#shop{
+    background: #CAC531;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F3F9A7, #CAC531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:black;
+    font-family:"Great Vibes";
+    font-size:60px;
+}
+.products{
+    padding:4rem 0;
+    background-color: rgb(245, 244, 244);
+    }
+.products-center{
+    width:90%;
+    margin:0 auto;
+    margin-left:10%;
+    max-width:1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+    grid-column-gap:1.5rem;
+    grid-row-gap:2rem;
+}
+.img-container{
+    position: relative;
+    overflow:hidden;
+}
+.product{
+    width:68%;
+}
+ .bag-btn{
+    position: absolute;
+    top:80%;
+    right:0;
+    background-color:black;
+    color:rgb(92, 91, 91);
+    border:none;
+    padding:0.5rem 1.2rem;
+    transition:all 0.3s linear;
+    transform:translateX(101%);
+    cursor:pointer;
+    font-size:15px;
+    letter-spacing:1px;
+ }
+.bag-btn:hover{
+    color:white;
+}
+.fa-shopping-cart{
+    margin-right:0.5rem;
+}
+.product:hover .bag-btn{
+    transform:translateX(0);
+}
+.product .product-img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    transition:all 0.3s linear;
+}
+.product:hover .product-img{
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+.caption{
+    text-align: center;
+    padding-top:15px;
+    padding-bottom: 2px;
+} 
+.caption .mycaption{
+    /* text-transform: uppercase; */
+    font-family:"Allura";
+    font-size:26px;
+    font-weight:bold;
+    letter-spacing:1px;
+    /* color:rgb(2, 2, 94); */
+}
+.caption p{
+    color:navy;
+    font-weight:bold;
+}
+.cart-overlay{
+    position: fixed;
+    top:0;
+    bottom:0;
+    width:100%;
+    transition:all 0.3s linear;
+    background:rgba(255, 255, 255, 0.5);
+    z-index:4;
+    visibility: hidden;
+}
+.cart{
+    position: fixed;
+    top:0;
+    right:0;
+    width:100%;
+    height:100%;
+    overflow-y:scroll;
+    z-index:3;
+    /* background:rgb(233, 233, 240); */
+    background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgba(153,202,251,1) 100.2% );
+    padding:1.5rem;
+    transition:all 0.3s linear;
+    transform:translateX(100%);
+}
+.showCart{
+    transform: translateX(0);
+}
+.transparentBcg{
+    visibility: visible;
+}
+
+.page-footer{
+    background-color:lightgray;
+    color: black;
+}
+@media screen and (min-width: 768px){
+    .cart{
+        width: 30vw;
+        min-width: 450px;
+    }
+    
+}
+.close-cart{
+    font-size:1.5rem;
+    cursor:pointer;
+}
+.cart h2{
+    text-align:center;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-family:"Dancing Script";
+}
+
+.cart-item{
+    display: grid;
+    align-items:center;
+    grid-template-columns:auto 1fr auto;
+    grid-column-gap:1.5rem;
+    margin:1.5rem 0;
+    font-family: "Dancing Script";
+}
+.cart-content .cart-item img{
+    width:100px;
+
+}
+.cart-item h5{
+    margin:0.5rem 0;
+    font-size:17px;
+    font-weight: bold;
+}
+.cart-item p{
+    margin-bottom:0px;
+}
+.item-amount{
+    text-align:center;
+    margin:0px;
+    font-weight:bold;
+    font-family: "Dancing Script";
+}
+.remove-item{
+    color:grey;
+    cursor: pointer;
+    font-size:15px;
+    /* font-family: "Dancing Script"; */
+}
+.fa-chevron-up,.fa-chevron-down{
+    cursor:pointer;
+    color: rgb(88, 88, 88);
+}
+.clear-cart{
+    padding:8px 30px;
+    border:none;
+    font-weight:bold;
+    background-color:#3282b8;
+}
+.clear-cart:hover{
+    color:white;
+    background-color:#0f4c75;
+    transform: scale(1.1);
+    transition:0.4s;
+}
+
+.cart-footer{
+    margin-top:2rem;
+    text-align:center;
+}
+.cart-footer h3{
+    margin-bottom: 1rem; 
+    font-family: "Dancing Script";
+    font-weight: bold;
+}
+.cart-total{
+    font-family: "Dancing Script";
+    font-size:22px;
+}
+@media screen and (max-width:600px) {
+    .about-us .row .a-head{
+        font-size:30px;
+        padding:0;
+        margin:0;
+    }
+    .about-us .row .body{
+        font-size:12px;
+        padding:0;
+        margin:0;
+    }
+    #shop{
+        font-size: 40px;
+    }
+    .carousel-inner .c-one h1{
+        font-family: "Monoton";
+        position: absolute;
+        top:35%;
+        left:5%;
+        font-size:40px;
+        color:white;
+    }
+    .carousel-inner .c-two:before{
+        background-size: 100% 100%;
+        opacity: 1;
+    }
+    .carousel-inner .c-two h1{
+        font-size:40px;
+    }
+    .carousel-inner .c-three:before{
+        opacity: 1;
+        background-size: 100% 100%;
+
+    }
+    .carousel-inner .c-three h1{
+        font-family:"Bungee Inline" ;
+        position: absolute;
+        top:40%;
+        left:10%;
+        font-size:40px;
+        z-index:2;
+        color: black;
+    }
+    .cart-btn .cart-items{
+        position: absolute;
+        top:-3px;
+        left:31%;
+         background:black;
+        padding:0px 7px;
+        border-radius:50%;
+        color:white;
+    }
+    .navbar .cart-btn{
+        margin-left:33%;
+    }
+    .products-center{
+        width:90%;
+        margin:0 auto;
+        margin-left:10%;
+        max-width:1170px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+        grid-column-gap:1.5rem;
+        grid-row-gap:2rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .navbar .navbar-nav .nav-item a.active::before{
+        background:white;
+        position: absolute;
+        display: block;
+        bottom:0px;
+        width:0;
+        left:0; 
+    }
+    .cart-btn{
+        margin-left:20%;
+    }
+    .cart-items{
+        position: absolute;
+        top:-3px;
+        left:39%;
+        /* right:-20px; */
+         background:black;
+        padding:0px 8px;
+        border-radius:50%;
+        color:white;
+    }
+    .navbar .navbar-nav .mynav-font{
+        text-align: center;
+    }
+    .navbar .navbar-nav .nav-item a:hover:before{
+        width:0%;
+    }
+    .c-one h1{
+        position: absolute;
+        top:30%;
+        left:40%;
+        font-size:50px;
+    }
+    .c-two h1{
+        top:55%;
+        left:4.5%;
+        font-size:60px;
+        font-weight:bold ;
+        color:rgb(61, 1, 61);
+    }
+    .c-three h1{
+        top:30%;
+        left:10%;
+        font-size:50px;
+    }
+    html{
+        overflow-x: hidden;
+    }
+  }
